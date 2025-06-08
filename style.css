@@ -29,7 +29,7 @@ body {
     width: 30vw;
 }
 
-.display {
+#display {
 
     display: flex;
     justify-content: end;
