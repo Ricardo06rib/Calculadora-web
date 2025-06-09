@@ -114,9 +114,21 @@ function botmult() {
 
 function botigual() {
 
+    dp = dp + ".0"
     dp = eval(dp);
     console.log(dp);
-    document.getElementById("display").innerHTML= dp;
+    
+    if (dp == Infinity || dp == undefined) {
+        
+        document.getElementById("display").innerHTML= "erro";
+        setTimeout(botC, 500);
+        console.log("erro");
+        
+    }else {
+        
+        document.getElementById("display").innerHTML= dp;
+        console.log("certo");
+    }
 
 }
 
